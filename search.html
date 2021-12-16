@@ -1,0 +1,57 @@
+<div class="container-fluid p-4">
+    <!-- Search parameters -->
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <label for="search-input" class="col-form-label">FARFind</label>
+        </div>
+        <div class="col-auto">
+            <input type="search" id="search-input" class="form-control">
+        </div>
+
+        <div class="col-auto">
+            <button id="search-button" type="button" class="btn btn-primary">
+                Search
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="col-auto">
+            <label for="results-per-page" class="col-form-label">Results per page</label>
+        </div>
+        <div class="col-auto">
+            <select class="form-select" id="results-per-page" aria-label="Default select example">
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+            </select>
+        </div>
+    </div>
+    <!-- Option checkboxes-->
+    <div class="form-check form-check-inline ml-3 pt-3 pb-3">
+        <input class="form-check-input" type="checkbox" id="all-checkbox" value="all" checked>
+        <label class="form-check-label" for="all-checkbox">All</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="far-checkbox" value="far">
+        <label class="form-check-label" for="far-checkbox">FAR</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="dfars-checkbox" value="dfars">
+        <label class="form-check-label" for="dfars-checkbox">DFARS</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="affars-checkbox" value="affars">
+        <label class="form-check-label" for="affars-checkbox">AFFARS</label>
+    </div>
+    <!-- Result list -->
+    <ol class="search-results list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <h4><a href="#">Admin – fully responsive webapp</a></h4>
+                <small class="text-success">www.stepofweb.com/</small>
+                <p>Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.</p>
+            </div>
+        </li>
+    </ol>
+</div>
